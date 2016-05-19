@@ -89,7 +89,7 @@ or, simply
 
     rails s
 
-This will boot the application using the Puma webserver and will be accessible by default at port 8000, via `http://localhost:8000`
+This will boot the application using the Puma webserver and will be accessible by default at port 3000, via `http://localhost:3000`
 
 If you're running the application on a Private or Public server, instead, you might prefer to use something like Apache or Nginx as a reverse proxy, to instead make the API available via a custom domain. I'm not going to cover the specifics of that here, as there are many possible configurations, so I'll assume you have some prior knowledge on this subject and let you and google help each other out.
 
@@ -102,11 +102,11 @@ Once running, the API has 2 endpoints:
 
 So, assuming you're querying a local webserver, if you wanted to fetch data for item 12345 for US-Emerald Dream for the past 2 days, you'd issue a GET request to
 
-    http://localhost:8000/api/auctions/items/12345?region=us&realm=emerald-dream&period=48
+    http://localhost:3000/api/auctions/items/12345?region=us&realm=emerald-dream&period=48
 
 If you wanted to fetch ALL auction from US-Emerald Dream for the past week, you'd issue a GET request to
 
-    http://localhost:8000/api/auctions/realm/us/emerald-dream?period=168
+    http://localhost:3000/api/auctions/realm/us/emerald-dream?period=168
 
 
 To-Do
